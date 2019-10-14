@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ChatboardApp</string>
+    <string name="main_title">Chatboard</string>
+
+    <string name="main_subtitle">Transforme seus jogos \nem momentos inesquecíveis.</string>
+    <string name="button_new_game">Novo Jogo</string>
+    <string name="button_exit">Sair</string>
+    <string name="developed_by">Desenvolvido por Vinícius Manara Martins</string>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitialScreen">
+
+    <TextView
+        android:textColor="@color/mainLogoColor"
+        android:text="@string/main_title"
+        android:fontFamily="@font/arial_rounded_mt_bold"
+        android:gravity="center"
+        android:textSize="@dimen/main_title_font_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="42dp"
+        android:fontFamily="@font/arial_rounded_mt_bold"
+        android:gravity="center"
+        android:text="@string/main_subtitle"
+        android:textColor="@color/mainSubTitleColor"
+        android:textSize="@dimen/main_subtitle_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:textColor="#FFF"
+        android:text="@string/developed_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFooter"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:textSize="@dimen/text_button_font_size"
+        android:text="@string/button_exit"
+        android:id="@+id/btExit"
+        style="@style/custom_button"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvFooter"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="42dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:text="@string/button_new_game"
+        style="@style/custom_button"
+        android:id="@+id/btNewGame"
+        app:layout_constraintStart_toStartOf="@+id/btExit"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/btExit"
+        android:layout_marginBottom="42dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btExit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
