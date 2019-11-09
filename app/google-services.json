@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "622638734400",
+    "firebase_url": "https://chatboardap.firebaseio.com",
+    "project_id": "chatboardap",
+    "storage_bucket": "chatboardap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622638734400:android:5017e1b4371cfc6e6713a5",
+        "android_client_info": {
+          "package_name": "br.com.vinimanara.chatboardapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622638734400-upc121qdfqu1dfdet95lp2ms7bde0mtq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.vinimanara.chatboardapp",
+            "certificate_hash": "8bff5637060485ef0c9f026dfede89f306b7e809"
+          }
+        },
+        {
+          "client_id": "622638734400-1h6oo96c9eogbnmf46sin0n979htfmvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3LpvXZqYuSaUvh21EvDk4dLLjJkWU-DM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622638734400-1h6oo96c9eogbnmf46sin0n979htfmvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

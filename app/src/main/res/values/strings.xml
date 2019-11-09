@@ -5,6 +5,15 @@
     <string name="main_subtitle">Transforme seus jogos \nem momentos inesquecíveis.</string>
     <string name="button_new_game">Novo Jogo</string>
     <string name="button_exit">Sair</string>
-    <string name="developed_by">Desenvolvido por Vinícius Manara Martins</string>
+    <string name="developed_by">Desenvolvido por Vinícius Manara Martins e Fernando Henry.</string>
 
+    <!-- Strings do Login -->
+    <string name="label_email">E-mail</string>
+    <string name="label_password">Senha</string>
+    <string name="button_login">Entrar</string>
+    <string name="label_new_account">Ainda não tem conta? Crie uma</string>
+    <string name="button_new_account">Criar conta</string>
+    <string name="label_name">Nome</string>
+    <string name="label_phone">Telefone</string>
+    <string name="header_new_user">Novo Usuário</string>
 </resources>
