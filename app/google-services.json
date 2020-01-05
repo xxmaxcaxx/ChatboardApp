@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "622638734400-nq24akk4quda1uhe5cvdck6n13p7h47f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.vinimanara.chatboardapp",
+            "certificate_hash": "37bb48777289ef54cd2f61150b5177f73411ffec"
+          }
+        },
+        {
           "client_id": "622638734400-upc121qdfqu1dfdet95lp2ms7bde0mtq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

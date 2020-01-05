@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChatboardApp</string>
+    <string name="button_exit">Sair</string>
+    <string name="button_login">Entrar</string>
+    <string name="button_new_account">Nova Conta</string>
+    <string name="developed_by">Desenvolvido por Vinícius Manara Martins e Fernando Henry.</string>
+    <string name="header_new_user">Novo Usuário</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_name">Nome</string>
+    <string name="label_new_account">Ainda não tem conta? Crie uma</string>
+    <string name="label_password">Senha</string>
+    <string name="label_phone">Telefone</string>
+    <string name="main_subtitle">Chatboard</string>
+    <string name="main_title">Chatboard</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_exit">Sair</string>
+    <string name="menu_maps">Mapa</string>
+    <string name="menu_about">Sobre o applicativo</string>
+    <string name="welcome_to_app">Bem vindo ao ChatBoard!</string>
+    <string name="app_version">Versão do Aplicativo: 1.0</string>
+</resources>

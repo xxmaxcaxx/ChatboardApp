@@ -29,7 +29,7 @@ class ScreenMap {
         private fun getScreenNames(): Map<String, String> {
             return mapOf(
                 //Login
-                Pair(FormActivity::class.java.simpleName, "Cadastro_Formulario"),
+                Pair(FormActivity::class.java.simpleName, "Pagina Inicial"),
                 Pair(LoginActivity::class.java.simpleName, "Login_Usuario"),
                 Pair(SignUpActivity::class.java.simpleName, "Criacao_Usuario"),
                 Pair(SplashActivity::class.java.simpleName, "Splash")

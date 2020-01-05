@@ -4,7 +4,7 @@ import android.app.Activity
 import android.os.Bundle
 import com.google.firebase.analytics.FirebaseAnalytics
 
-object FlexTracker {
+object ChatBoardTracker {
     fun trackScreen(activity: Activity, screenName: String) {
         if (screenName != ScreenMap.SCREEN_NOT_TRACKING) {
             //Log.i("ANALYTICS", screenName)

@@ -6,9 +6,15 @@ import android.view.Menu
 import android.view.MenuItem
 import br.com.vinimanara.chatboardapp.BaseActivity
 import br.com.vinimanara.chatboardapp.R
+import br.com.vinimanara.chatboardapp.about.AboutActivity
 import br.com.vinimanara.chatboardapp.login.LoginActivity
+import br.com.vinimanara.chatboardapp.maps.MapsActivity
+import br.com.vinimanara.chatboardapp.utils.DatabaseUtil
 import br.com.vinimanara.chatboardapp.utils.RemoteConfig
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_form.*
 
@@ -26,10 +32,23 @@ class FormActivity : BaseActivity() {
     }
 
     private val defaultClearValueText = "0.0"
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.form_menu, menu)
         return true
+    }
+
+    private fun listenerFirebaseRealtime() {
+        DatabaseUtil.getDatabase()
+            .getReference(firebaseReferenceNode)
+            .child(userId)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                }
+                override fun onCancelled(error: DatabaseError) {}
+            })
     }
 
     private fun loadBanner() {
@@ -40,8 +59,12 @@ class FormActivity : BaseActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.getItemId()) {
-            R.id.action_clear -> {
-                clearData()
+            R.id.action_about -> {
+                about()
+                return true
+            }
+            R.id.action_maps -> {
+                maps()
                 return true
             }
             R.id.action_logout -> {
@@ -56,7 +79,12 @@ class FormActivity : BaseActivity() {
         startActivity(Intent(this, LoginActivity::class.java))
         finish()
     }
-    private fun clearData() {
-
+    private fun about() {
+        startActivity(Intent(this, AboutActivity::class.java))
+        finish()
+    }
+    private fun maps() {
+        startActivity(Intent(this, MapsActivity::class.java))
+        finish()
     }
 }
