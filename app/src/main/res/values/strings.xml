@@ -22,4 +22,6 @@
     <string name="welcome_to_app">Welcome to Chatboard!</string>
     <string name="app_version">App Version: 1.0</string>
     <string name="title_activity_maps">Map</string>
+    <string name="app_full">Full Version</string>
+    <string name="app_demo">Demo Version</string>
 </resources>

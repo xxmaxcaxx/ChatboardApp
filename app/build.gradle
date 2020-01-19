@@ -23,6 +23,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "default"
+    productFlavors {
+        demo {
+
+        }
+        full {
+
+        }
+    }
+}
+
+repositories {
+    maven {
+        url "file:///Users/Fernando/Desktop/ChatboardBiblioteca/gradle/rep"
+    }
 }
 
 dependencies {
@@ -50,5 +66,17 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+    implementation "org.koin:koin-android-viewmodel:2.0.1"
+    implementation "org.koin:koin-android:2.0.1"
+    //implementation 'com.chatboard.chatboardbiblioteca:chatboardbiblioteca:0.0.1'
 
 }

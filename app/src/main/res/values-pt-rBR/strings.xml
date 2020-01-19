@@ -19,4 +19,7 @@
     <string name="menu_about">Sobre o applicativo</string>
     <string name="welcome_to_app">Bem vindo ao ChatBoard!</string>
     <string name="app_version">Versão do Aplicativo: 1.0</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="app_demo">Versão Demo</string>
+    <string name="app_full">Verrsão Full</string>
 </resources>
