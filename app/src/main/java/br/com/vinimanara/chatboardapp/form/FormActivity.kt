@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import br.com.vinimanara.chatboardapp.BaseActivity
+import br.com.vinimanara.chatboardapp.CreatePerson.CreatePersonActivity
 import br.com.vinimanara.chatboardapp.R
 import br.com.vinimanara.chatboardapp.about.AboutActivity
 import br.com.vinimanara.chatboardapp.login.LoginActivity
@@ -59,6 +60,10 @@ class FormActivity : BaseActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.getItemId()) {
+            R.id.action_client -> {
+               client()
+                return true
+            }
             R.id.action_about -> {
                 about()
                 return true
@@ -73,6 +78,10 @@ class FormActivity : BaseActivity() {
             }
             else -> return super.onOptionsItemSelected(item)
         }
+    }
+    private fun client() {
+        startActivity(Intent(this, CreatePersonActivity::class.java))
+        finish()
     }
     private fun logout() {
         mAuth.signOut()

@@ -78,5 +78,4 @@ dependencies {
     implementation "org.koin:koin-android-viewmodel:2.0.1"
     implementation "org.koin:koin-android:2.0.1"
     //implementation 'com.chatboard.chatboardbiblioteca:chatboardbiblioteca:0.0.1'
-
 }

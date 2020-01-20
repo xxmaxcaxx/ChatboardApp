@@ -24,4 +24,7 @@
     <string name="title_activity_maps">Map</string>
     <string name="app_full">Full Version</string>
     <string name="app_demo">Demo Version</string>
+    <string name="menu_user">Users List</string>
+    <string name="data_added">Data Added</string>
+    <string name="data_not_added">Data not Added</string>
 </resources>
